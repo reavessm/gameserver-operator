@@ -211,8 +211,10 @@ CONTROLLER_GEN ?= $(LOCALBIN)/controller-gen
 ENVTEST ?= $(LOCALBIN)/setup-envtest
 
 ## Tool Versions
-KUSTOMIZE_VERSION ?= v5.2.1
-CONTROLLER_TOOLS_VERSION ?= v0.13.0
+# KUSTOMIZE_VERSION ?= latest
+KUSTOMIZE_VERSION ?= v5.6.0
+# CONTROLLER_TOOLS_VERSION ?= latest
+CONTROLLER_TOOLS_VERSION ?= v0.17.2
 
 .PHONY: kustomize
 kustomize: $(KUSTOMIZE) ## Download kustomize locally if necessary. If wrong version is installed, it will be removed before downloading.
